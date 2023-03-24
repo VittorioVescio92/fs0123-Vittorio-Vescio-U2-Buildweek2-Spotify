@@ -1,0 +1,222 @@
+@import url(..//css/circular-font.css);
+
+body {
+  font-family: "Circular";
+  font-style: normal;
+}
+
+#main-container {
+  background-color: #121212;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+svg {
+  fill: white;
+}
+
+svg:hover {
+  fill: green;
+}
+
+#play {
+  background: white;
+  aspect-ratio: 1/1;
+}
+
+#play svg {
+  fill: black;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #969494;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #969494;
+}
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#playlistCard {
+  width: calc(96% / 3);
+  overflow: hidden;
+}
+
+#mainTrack {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(40deg, rgba(0, 0, 0, 1) 16%, rgb(55, 53, 53) 88%);
+}
+
+.mobile-play-btn {
+  background-color: #121212;
+  border-radius: 50px;
+}
+#heart-mobile {
+  fill: rgb(29, 186, 29);
+}
+
+#player{
+background-color: rgb(63, 63, 63);
+}
+
+@media screen and (max-width: 991px) {
+  #friends,
+  #comments,
+  #user-playlists,
+  #three-dots,
+  #icon,
+  #containerRight,
+  #next,
+  #previous,
+  #repeat,
+  #another-svg,
+  #shuffle,
+  #playbackBar .playback-bar,
+  #playback-progressbar,
+  input,
+  #time,
+  #discover-more,
+  #container-new-album,
+  #second-section,
+  #third-section,
+  #switch-icon,
+  #profile,
+  #navbar-toggler {
+    display: none;
+  }
+
+  #song-img {
+    width: 50px;
+  }
+
+  #player {
+    position: fixed;
+    width: 94%;
+    bottom: 93px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(63, 63, 63);
+    margin-left: 3%;
+  }
+
+  #navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  #mobile-navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #navbar-menu li {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #navbar-menu svg {
+    margin-right: 12px;
+  }
+
+  #play {
+    background: none;
+  }
+
+  #play svg {
+    fill: white;
+    scale: 1.2;
+  }
+
+  #heart-svg svg {
+    scale: 1.2;
+  }
+
+  #album-img {
+    width: 66%;
+    height: 66%;
+  }
+  .container-carta {
+    display: flex;
+    flex-direction: row;
+  }
+  .corpo-carta {
+    height: 69%;
+  }
+  .carta {
+    width: 70%;
+  }
+  .mobile-play-btn {
+    background-color: #121212;
+    border-radius: 50px;
+  }
+  #heart-mobile {
+    fill: rgb(29, 186, 29);
+  }
+  #container-navbar {
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 0.8) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .divider {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width:992px){
+  footer {
+    background-color: #121212;
+  }
+  
+}
